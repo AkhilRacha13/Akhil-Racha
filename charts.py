@@ -15,6 +15,7 @@ df["End"] = pd.to_datetime(df["End Time"])
 
 # Create a Dash app instance
 app = dash.Dash(__name__)
+server = app.server
 
 # Define color mapping for states
 state_colors = {"Stopped": "orangered", "Idle": "blue", "Working": "green"}
